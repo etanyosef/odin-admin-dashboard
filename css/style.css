@@ -36,13 +36,27 @@
 .sidebar > ul li:not(:last-child) {
     margin-bottom: 15px;
 }
+.sidebar > ul li {
+    vertical-align: middle;
+}
 .sidebar > ul a:link {
     color: white;
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: bold;
+    vertical-align: middle;
 }
-
+.sidebar .sidebar-icon > img {
+    width: 25px;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+.sidebar .sidebar-icon {
+    width: 25px;
+    margin-right: 20px;
+    vertical-align: middle;
+    fill: white;
+}
 .sidebar-logo {
     align-items: center;
     display: flex;
@@ -53,14 +67,21 @@
     font-size: 2rem;
 }
 .dashboard-logo {
-    width: 60px;
+    width: 50px;
+    fill: white;
+    margin-right: 10px;
 }
 /* SIDEBAR END */
 
 /* HEADER START */
 .header {
     grid-column: 2 / 3;
-    padding: 10px 20px;
+    padding: 20px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-shadow: 1px 3px 8px rgb(220, 220, 220);
+    z-index: 1;
 }
 .header > .search-container,
 .header > .user-bar,
@@ -69,22 +90,78 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 50px;
 }
 .header > .user-bar {
+    display: flex;
+}
 
+.search-form {
+    display: flex;
+    gap: 20px;
+    width: 60%;
+    justify-content: stretch;
 }
-.user-bar > .user-welcome {
-    
+.search-form input[type="search"] {
+    background-color: rgb(229, 234, 241);
+    border: none;
+    padding: 5px 15px;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    width: 100%;
 }
+.search-form > .search-button {
+    width: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.user-profile > .notification-button {
+    width: 25px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    fill: black;
+}
+.user-profile > .notification-button:hover {
+    fill: var(--primary-bg-color);
+}
+.user-profile > .user-profile-link {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.welcome-message {
+    font-weight: 800;
+}
+.welcome-message > .greeting {
+    font-size: 0.9rem;
+}
+.welcome-message > .user-nametag {
+    font-size: 1.5rem;
+}
+
 .user-menu > ul {
     list-style-type: none;
     display: flex;
+    gap: 30px;
+}
+.user-menu a:link {
+    text-decoration: none;
+    color: white;
+    background-color: var(--primary-bg-color);
+    padding: 10px 30px;
+    border-radius: 18px;
+    font-weight: bold;
 }
 /* HEADER END */
 
 /* CONTENT START */
 .content {
-    background-color: rgb(231, 231, 231);
+    background-color: rgb(229, 234, 241);
     padding: 20px 15px;
     display: grid;
     grid-template-columns: 4fr 1fr;
