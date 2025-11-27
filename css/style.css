@@ -87,7 +87,7 @@
     background-color: rgb(231, 231, 231);
     padding: 20px 15px;
     display: grid;
-    grid-template-columns: 5fr 1fr;
+    grid-template-columns: 4fr 1fr;
     gap: 30px;
 }
 
@@ -118,5 +118,40 @@
 }
 .card-actions img {
     width: 30px;
+}
+
+.side-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.side-content .announcements,
+.side-content .trending {
+    background-color: white;
+    padding: 30px;
+    border-radius: 1rem;
+}
+.side-content h2 {
+    margin-bottom: 20px;
+}
+
+.announcements, 
+.trending {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.announcements > .announcement-item:not(:last-child) {
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+.announcement-item:not(:last-child) > p {
+    margin-bottom: 30px;
+}
+
+.trending-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 /* CONTENT END */
