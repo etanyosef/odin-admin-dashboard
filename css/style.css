@@ -19,6 +19,7 @@
     min-height: 100vh;
 }
 
+/* SIDEBAR START */
 .sidebar {
     background-color: var(--primary-bg-color);
     grid-column: 1 / 2;
@@ -41,6 +42,20 @@
     font-size: 1.1rem;
     font-weight: bold;
 }
+
+.sidebar-logo {
+    align-items: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.sidebar-logo h2 {
+    font-size: 2rem;
+}
+.dashboard-logo {
+    width: 60px;
+}
+/* SIDEBAR END */
 
 /* HEADER START */
 .header {
