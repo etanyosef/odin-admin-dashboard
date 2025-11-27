@@ -71,12 +71,26 @@
 .content {
     background-color: rgb(231, 231, 231);
     padding: 20px 15px;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    gap: 30px;
 }
 
 .main-content {
-    
+    margin-left: 20px;
 }
-.main-content > .card {
+.main-content > h2 {
+    margin-bottom: 20px;
+}
 
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+.card-container > .card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
 }
 /* CONTENT END */
