@@ -24,7 +24,7 @@
     background-color: var(--primary-bg-color);
     grid-column: 1 / 2;
     grid-row: 1 / 3;
-    padding: 20px 40px;
+    padding: 30px 40px;
     color: whitesmoke;
     display: flex;
     flex-direction: column;
@@ -46,8 +46,11 @@
     font-weight: bold;
     vertical-align: middle;
 }
+.sidebar a:link:hover {
+    color: gold;
+}
 .sidebar-icon:has(+ a:hover) {
-    fill: rgb(207, 233, 255);
+    fill: gold
 }
 .sidebar .sidebar-icon {
     width: 25px;
@@ -88,7 +91,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 50px;
+    gap: 30px;
 }
 .header > .user-bar {
     display: flex;
@@ -114,6 +117,9 @@
     background-color: transparent;
     cursor: pointer;
 }
+.search-form > .search-button:hover {
+    fill: var(--primary-bg-color);
+}
 
 .user-profile > .notification-button {
     width: 25px;
@@ -128,8 +134,14 @@
 .user-profile > .user-profile-link {
     color: black;
     text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2rem;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.user-profile > .user-profile-link:hover {
+    color: var(--primary-bg-color);
+}
+.user-profile > .profile-pic {
+    width: 60px;
 }
 
 .welcome-message {
@@ -140,6 +152,9 @@
 }
 .welcome-message > .user-nametag {
     font-size: 1.5rem;
+}
+.user-welcome > .profile-pic {
+    width: 100px;
 }
 
 .user-menu > ul {
@@ -162,7 +177,7 @@
     background-color: rgb(229, 234, 241);
     padding: 20px 15px;
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 3.5fr 1fr;
     gap: 30px;
 }
 
@@ -191,6 +206,13 @@
     gap: 20px;
     margin-top: 50px;
 }
+.card-actions .card-icon {
+    fill: black;
+    width: 30px;
+}
+.card-actions > a:hover .card-icon {
+    fill: var(--primary-bg-color);
+}
 .card-actions img {
     width: 30px;
 }
@@ -199,6 +221,7 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
+    margin-right: 10px;
 }
 .side-content .announcements,
 .side-content .trending {
@@ -226,5 +249,22 @@
     display: flex;
     align-items: center;
     gap: 10px;
+}
+.trending-item > .profile-pic {
+    width: 60px;
+    margin-right: 10px;
+}
+.trending-item .user-handle,
+.trending-item .topic {
+    color: black;
+    text-decoration: none;
+}
+.trending-item .user-handle:hover,
+.trending-item .topic:hover {
+    color: var(--primary-bg-color);
+}
+.trending-item .topic {
+    color: rgb(79, 79, 79);
+    font-size: 1.1rem;
 }
 /* CONTENT END */
