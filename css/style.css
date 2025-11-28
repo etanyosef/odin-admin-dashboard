@@ -46,13 +46,8 @@
     font-weight: bold;
     vertical-align: middle;
 }
-.sidebar a:link:hover .sidebar-icon {
-    
-}
-.sidebar .sidebar-icon > img {
-    width: 25px;
-    margin-right: 20px;
-    vertical-align: middle;
+.sidebar-icon:has(+ a:hover) {
+    fill: rgb(207, 233, 255);
 }
 .sidebar .sidebar-icon {
     width: 25px;
