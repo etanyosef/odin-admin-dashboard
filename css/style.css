@@ -226,6 +226,7 @@
     flex-direction: column;
     gap: 40px;
     margin-right: 10px;
+    min-width: 300px;
 }
 .side-content .announcements,
 .side-content .trending {
