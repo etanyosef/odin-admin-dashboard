@@ -166,9 +166,13 @@
     text-decoration: none;
     color: white;
     background-color: var(--primary-bg-color);
-    padding: 10px 30px;
-    border-radius: 18px;
+    padding: 15px 35px;
+    border-radius: 35px;
     font-weight: bold;
+    font-size: 1.1rem;
+}
+.user-menu a:hover {
+    background-color: rgb(255, 0, 0);
 }
 /* HEADER END */
 
